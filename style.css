@@ -1,14 +1,19 @@
+@font-face {
+    font-family: FiraCode;
+    src: url(FiraCode-Regular.woff);
+}
+
 * {
     --text: #ffffff;
-    --background: #001122;
-    --primary-button: #001f3f;
-    --secondary-button: calc(var(--primary-button) - 40%);
-    --accent: 00bfff;
+    --background: #232a36;
+    --primary-button: #bd93f9;
+    --secondary-button: #6272a4;
+    --accent: #50fa7b;
 }
 
 a {
     background-color: var(--primary-button);
-    color: var(--text);
+    color: var(--accent);
 }
 
 a:link {
@@ -23,7 +28,7 @@ a:active {
 }
 
 html {
-    font-family: sans-serif;
+    font-family: FiraCode, monospace;
     font-size: 16px;
 }
 
@@ -68,6 +73,7 @@ body {
     padding: 16px;
     text-decoration: none;
     background-color: var(--primary-button);
+    color: var(--text);
 }
 
 .menu li a:active {
