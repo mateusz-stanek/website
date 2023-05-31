@@ -1,19 +1,54 @@
+* {
+    --text: #ffffff;
+    --background: #001122;
+    --primary-button: #001f3f;
+    --secondary-button: calc(var(--primary-button) - 40%);
+    --accent: 00bfff;
+}
+
+a {
+    background-color: var(--primary-button);
+    color: var(--text);
+}
+
+a:link {
+    background-color: var(--primary-button);
+}
+a:visited {
+    background-color: var(--secondary-button);
+}
+
+a:active {
+    background-color: var(--text);
+}
+
 html {
     font-family: sans-serif;
     font-size: 16px;
+}
+
+hr {
+    width: 80%;
 }
 
 @media screen and (min-width: 320px) {
     html {
         font-size: calc(12px + 6 * ((100vw - 320px) / 680));
     }
+    body {
+        margin: 2em auto;
+    }
+    hr {
+        width: 100%;
+    }
 }
 
 body {
-	background-color: #1b1b1b;
-	color: #fff;
+	background-color: var(--background);
+    color: var(--text);
     max-width: 720px;
     margin: 2em auto;
+    align: center;
 }
 
 .menu {
@@ -31,7 +66,10 @@ body {
     display: block;
     text-align: center;
     padding: 16px;
-    padding-left: 0;
     text-decoration: none;
-    color: inherit;
+    background-color: var(--primary-button);
+}
+
+.menu li a:active {
+    background-color: calc(var(--text) - 50%);
 }
