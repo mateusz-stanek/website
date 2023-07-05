@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mateusz Stanek</title>
+    <link>https://stanek.software/</link>
+    <description>Recent content on Mateusz Stanek</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://stanek.software/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>
