@@ -1,5 +1,19 @@
 {{ define "main" }}
 <div>
     <h1 class="title">{{ .Site.Title }}</h1>
+    <h3>Self-taught Software Developer</h2>
 </div>
+<hr>
+<h3>Latest posts:</h3>
+<ul class="latest-posts">
+{{ range (where .Site.Pages "Section" "posts") }}
+    {{ range first 5 .Pages.ByPublishDate.Reverse }}
+    <li>{{ .Date.Format "2006/01/02" }}: <a class="title" href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+    {{ end }}
+{{ end }}
+</ul>
+<a href="/posts">All posts...</a>
+<hr>
+<h3>My links:</h3>
+<a href="https://github.com/mateusz-stanek/">GitHub</a>
 {{ end }}
