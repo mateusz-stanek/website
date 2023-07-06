@@ -17,6 +17,16 @@ html {
     /*filter: invert(100%);*/
 }
 
+@media (max-width: 500px) {
+    #menu-item {
+        font-size: 24px;
+    }
+
+    * {
+        font-size: 18px;
+    }
+}
+
 body {
     /*bg-color: var(--clr-body);*/
 /*    backgroundolor: #ffffff;*/
@@ -37,10 +47,13 @@ body {
 }
 
 .logo {
-    height: 9em;
-    width: 9em;
+    height: 144px;
+    width: 144px;
 }
 
+.latest-posts {
+    list-style-type: none;
+}
 a {
     color: var(--clr-text);
     font-weight: bold;
@@ -60,8 +73,3 @@ div.heading {
     text-transform: uppercase;
 }
 
-@media (max-width: 500px) {
-    * {
-        font-size: 18px;
-    }
-}
