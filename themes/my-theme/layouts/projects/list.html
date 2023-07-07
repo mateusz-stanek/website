@@ -1,0 +1,9 @@
+{{ define "main" }}
+<div class="heading">Projects</div>
+<hr>
+<div style="width: 100%; display: flex; flex-wrap: wrap; justify-content: space-between;">
+{{ range .Pages.ByPublishDate.Reverse }}
+{{- partial "project-box.html" . -}}
+{{ end }}
+</div>
+{{ end }}
